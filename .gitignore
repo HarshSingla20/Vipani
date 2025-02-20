@@ -1,0 +1,82 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment variables (API keys, database credentials)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# Logs & Debugging
+logs/
+*.log
+debug.log
+error.log
+stdout.log
+stderr.log
+/logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build files
+/build/
+/dist/
+/out/
+
+# Editor & System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Redis Data
+dump.rdb
+appendonly.aof
+
+# Stripe Webhook Logs
+stripe.log
+
+# Public & Static Files (Optional)
+public/uploads/
+public/temp/
+public/images/temp/
+
+# Coverage & Testing
+/coverage/
+/.nyc_output/
+/jest/
+
+# MongoDB Database Dump
+/dump/
+
+# PM2 Logs
+pm2/logs/
+pm2/pids/
+
+# Docker & Kubernetes
+docker-compose.override.yml
+docker-compose.yml
+*.dockerfile
+
+# AWS / GCP / Firebase Credentials
+firebase.json
+.aws/
+.gcloud/
+gcp-key.json
+
+# SSL Certificates (if applicable)
+*.pem
+*.crt
+*.key
