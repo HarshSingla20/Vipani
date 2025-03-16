@@ -1,82 +1,80 @@
 # Node.js dependencies
 node_modules/
-npm-debug.log
-yarn-error.log
-package-lock.json
-yarn.lock
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Environment variables (API keys, database credentials)
+# Environment files
 .env
 .env.local
 .env.development
 .env.production
 .env.test
-.env.*.local
 
-# Logs & Debugging
+# Logs
 logs/
 *.log
 debug.log
-error.log
-stdout.log
-stderr.log
-/logs
-pids/
-*.pid
-*.seed
-*.pid.lock
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Build files
-/build/
-/dist/
-/out/
-
-# Editor & System files
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-.idea/
+# Editor files
 .vscode/
-*.sublime-project
+.idea/
 *.sublime-workspace
 
-# Redis Data
-dump.rdb
-appendonly.aof
+# Build and Cache files
+dist/
+build/
+.cache/
+out/
+.next/
+public/build/
+frontend/public/build/
+frontend/.vite/
+.tmp/
 
-# Stripe Webhook Logs
-stripe.log
+# Temporary files
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
 
-# Public & Static Files (Optional)
-public/uploads/
-public/temp/
-public/images/temp/
+# Backend specific
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/tmp/
 
-# Coverage & Testing
-/coverage/
-/.nyc_output/
-/jest/
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+frontend/.next/
+frontend/out/
 
-# MongoDB Database Dump
-/dump/
+# Redis (ignore dump files and local database storage)
+redis/dump.rdb
+redis/appendonly.aof
+redis.log
 
-# PM2 Logs
-pm2/logs/
-pm2/pids/
+# Stripe (ignore sensitive API keys or webhook test logs)
+stripe-logs/
+stripe-debug.log
 
-# Docker & Kubernetes
-docker-compose.override.yml
-docker-compose.yml
-*.dockerfile
+# Cloudinary (ignore sensitive API config)
+cloudinary/
+cloudinary-config.json
+cloudinary.log
 
-# AWS / GCP / Firebase Credentials
-firebase.json
-.aws/
-.gcloud/
-gcp-key.json
+# Git specific
+.git/
+.gitignore
 
-# SSL Certificates (if applicable)
-*.pem
-*.crt
-*.key
+# Tailwind and PostCSS
+tailwind.config.js
+postcss.config.js
